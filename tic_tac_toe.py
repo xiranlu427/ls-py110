@@ -332,7 +332,7 @@ def display_game_score(user_score, computer_score):
 def detect_match_winner(user_score, computer_score):
     """Check if a match winner occurs. Return the match winner or None."""
     if user_score == MAX_SCORE:
-        return "Player"
+        return "User"
     elif computer_score == MAX_SCORE:
         return "Computer"
     else:
@@ -381,7 +381,7 @@ def play_tic_tac_toe():
                 prompt('Press "Enter" to start the next round.')
                 input()
 
-        if detect_match_winner(user_score, computer_score) == "Player":
+        if detect_match_winner(user_score, computer_score) == "User":
             print("Congratulations! You won this match!")
         else:
             print("The match is over. Computer won.")
